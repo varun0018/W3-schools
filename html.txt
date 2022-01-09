@@ -1,0 +1,325 @@
+HTML page contains followoing tags
+
+<!DOCTYPE HTML>->it is an html5 page helps browser to display content properly
+
+<html>->root ele of html page
+
+<head>->contains the head of the page links to css,fonts,icons and also title of the website
+        contains meta information about the website
+
+<title>->contains title of the website
+
+<body>->contains all the display data of the website
+----------------------
+HTML element?
+
+<tagname> content goes here </tagname>
+eg:<h1>,<p>
+--------------------------------
+HTML attributes?
+
+html elements can have attributes which gives additional info about that tag 
+attributes should be specified at the start of element <a href=""></a> is  right 
+<a></a href=" "> not right
+eg <a href=" "></a>
+---------------------------------------
+HTML headings?
+
+Titles of subtitles that we wanna display on website
+
+<h1> ---- <h6>
+
+Headings are imp as get searched by the search engines
+
+--------------------------------------------------
+paragraph <p>
+
+usually start on a new line and are block of letters
+
+<p>lorem adkffjkd ef</p>
+
+use html <pre> element to preserve both line space and width
+------------------------------
+
+horizontal rule <hr>
+
+adds a line across the webpage width
+
+-----------------------------------
+
+line break <br>
+
+used to make a line to go to next line
+
+------------------------------------
+
+html style attribute is used to add style to the webpage
+
+<tagname style="property:value">
+
+eg:<h1 style="color:red">
+
+---------------------------------------------
+
+html formatting elements
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+-----------------------------------------------------
+
+html comment
+
+<!-- Hello There -->
+
+------------------------------------------------------
+
+html colors
+
+rgb() vs rgba()
+
+An RGB color value represents RED, GREEN, and BLUE light sources.
+
+An RGBA color value is an extension of RGB with an Alpha channel (opacity).
+in rgba 4th value can have values ranging from 0-1 0 being completely transparent and
+1 being  completely visible
+
+----------------------------------------------------------------
+
+html links
+
+links allows users to click thier way from one page to another
+
+<a href=""><a> is used for this purpose href can contain the url we wanna go to
+this is know as anchor tag
+
+by default linked page will be opened in the same tab to change this we can use
+
+
+-self -  Opens the document in same window or tab
+
+<a href="https:google.com" target="_self"></a>
+
+_blank - Opens the document in a new window or tab
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+to use image as link nest an image inside anchor tag
+
+<a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+to link an email id 
+
+<a href="mailto:varunasadananda34@gmail.com"></a>
+
+to use button as a link
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+
+html links before and after visiting
+
+use links to specify the properties before visiting
+
+use visited to specify the properties after visiting
+
+
+--------------------
+
+html images
+
+use <img> tag to add an image
+eg <img src=" " alt=""></img>
+src - source of the image
+alt - if source is not displayed then alt is displayed
+use float:right to make img float to right
+use float:left to make img float to left
+
+-----------------------------------
+
+background image
+
+use background-img:url('');
+
+background-repeat:no-repeat;
+to make sure that the image does not repeat 
+image repeats if it is small than the container
+
+to cover the image to entire container
+
+background-size:cover;
+
+to make sure that background-image will cover the entire element
+
+background-attachment:fixed;
+
+-----------------------------------------------
+
+html favicon
+
+favicon image is displayed to the left of the browser tab
+
+<link rel="icon" src="img/dummy.png"><link>
+
+should be declared in head of html
+
+------------------------------------------------------------
+
+html tables
+
+no columns need to be specifed each <td> or <th> inside <tr> is displayed as new column 
+
+<table> - specify the table
+<th> - table header
+<tr> - table row
+<td> - table data
+
+------------------------------------------------------------------
+
+html borders
+
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden
+
+----------------------------------------------------
+
+html lists
+
+allows to list similar items together
+
+lists(<li>) should be placed iside <ul> or <ol>
+
+<ul> - bullet points 
+<ol> - numbers
+
+-------------------------------------------------------
+
+block and inline elements
+
+two types of display property in html
+
+1)block - all the block-level element start in new line
+          They take full lenght of the website
+          <div> <footer> <form> <h1>-<h6> <header>
+          <hr> <li> <main> <nav> <section> <table>
+          <ul>
+
+2)inline - all elements in inline doesnot start on new line
+            <a> <br> <button> <i> <img>
+            <input> <span> <textarea>
+
+imp-inline ele cannot contain block-level element
+
+--------------------------------------------------------------
+
+HTML iframes
+
+display webpage inside a webpage
+
+<iframe src="url" title="description"></iframe>
+
+------------------------------------------------------------------
+
+responsive website 
+
+means that website looks good and readable on all the device viewports
+adjust its size automatically on all screen sizes
+
+max-width - elements will scale down if it has to but not cross the specifed number in max-width
+eg max-width:100%;
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+--------------------------------------------------------
+
+html forms
+
+forms are used to collect user input and most oftenly sent to the server
+
+<input> element
+
+<input type="text">	    Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button
+
+<label> element
+
+used to display info about form
+
+ <label for="fname">First name:</label><br>
+
+-----------------------------------------
+
+html form attribute
+
+<action> - what to do when form is submitted
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <input type="submit" value="Submit">
+</form>
+
+-------------------------------------------
+
+html form can contain one or more of following form attributes
+
+<input> - forms are used to collect user input and most oftenly sent to the server
+
+<label> - used to display info about form
+
+<select> - The <select> element defines a drop-down list
+
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+option is used to select options
+
+
+<textarea> - multiple line input field
+
+<button> - defines a clickable button
+
+---------------------------------------------------------
+
+html multimedia
+
+<video> - display video in webpage
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+controls adds video controls like pause,play etc
+source is used to specify the video format
